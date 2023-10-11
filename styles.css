@@ -59,23 +59,9 @@ body, h1, .discord-link, .download {
     transition: color 0.3s; /* Добавляем переход для цвета */
 }
 
-.blurry-text {
-    text-shadow: 4px 5px 9px rgba(0, 0, 0, 0.2); /* Горизонтальное смещение, вертикальное смещение, размытие и цвет тени */
-}
-
-.thanks {
-    position: fixed;
-    font-size: 48px;
-    top: 73%;
-    left: 10px; /* Отступ от левого края */
-    color: white; /* Красный цвет с прозрачностью */
-    margin-left: 15px;
-    opacity: 0.4;
-}
-
 .navbar {
     display: flex;
-    justify-content;
+    justify-content: center
     space-between;
     align-items: center;
 }
@@ -124,7 +110,7 @@ body, h1, .discord-link, .download {
 }
 
 .bodymenu ul li a:hover {
-    color: blue; /* Цвет текста при наведении */
+    color: rgb(75, 99, 235); /* Цвет текста при наведении */
 }
 
 .submenu {
@@ -153,7 +139,6 @@ body, h1, .discord-link, .download {
     list-style: none;
     padding: 10px;
     text-align: center;
-
 }
 
 .downloadMenu {
@@ -181,5 +166,23 @@ body, h1, .discord-link, .download {
 }
 
 .downloadMenu ul li a:hover {
-    color: blue; /* Цвет текста при наведении */
+    color: rgb(75, 99, 235); /* Цвет текста при наведении */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.logo img {
+    width: 100px; /* Ширина логотипа (подставьте нужное значение) */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    margin-right: 20px; /* Отступ между логотипом и меню */
+    margin-top: 12px;
+}
+
+.news a {
+    font-size: 52px;
+    margin-left: 15px;
 }
