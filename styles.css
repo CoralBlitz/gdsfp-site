@@ -1,0 +1,185 @@
+/* styles.css */
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.webp'); /* Путь к вашему изображению */
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачность фона на 50% через RGBA */
+    color: white;
+    font-family: 'Arial Bold', Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Фон с прозрачностью 50% через rgba */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    backdrop-filter: blur(10px); /* Размытие фона с помощью backdrop-filter */  
+}
+
+.discord-link {
+    position: fixed;
+    font-size: 128px;
+    top: 40%;
+    left: 10px; /* Отступ от левого края */
+    color: rgba(61, 117, 219); /* Красный цвет с прозрачностью */
+    margin-left: 15px;
+
+
+    text-decoration: none;
+}
+
+.discord-link a {
+    position: fixed;
+    font-size: 128px;
+    top: 40%;
+    left: 10px;
+    color: rgba(61, 117, 219);
+    margin-left: 15px;
+    border: 2px solid rgba(61, 117, 219);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.discord-link a:hover {
+    text-decoration: underline;
+}
+
+body, h1, .discord-link, .download {
+    font-family: 'Arial Bold', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s; /* Добавляем переход для цвета */
+}
+
+.blurry-text {
+    text-shadow: 4px 5px 9px rgba(0, 0, 0, 0.2); /* Горизонтальное смещение, вертикальное смещение, размытие и цвет тени */
+}
+
+.thanks {
+    position: fixed;
+    font-size: 48px;
+    top: 73%;
+    left: 10px; /* Отступ от левого края */
+    color: white; /* Красный цвет с прозрачностью */
+    margin-left: 15px;
+    opacity: 0.4;
+}
+
+.navbar {
+    display: flex;
+    justify-content;
+    space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+.bodymenu {
+
+    display: flex;
+    justify-content;
+    space-between;
+    align-items: center;
+    margin-top: 240px;
+}
+
+.bodymenu ul {
+    list-style: none;
+
+}
+
+.bodymenu ul li {
+    display: list-item;
+    padding: 10px;
+    color: white;
+}
+
+.bodymenu ul li a {
+    text-decoration: none;
+    font-size: 128px;
+    color: white;
+    transition: color 0.3s; /* Добавляем плавный переход для свойства color */
+}
+
+.bodymenu ul li a:hover {
+    color: blue; /* Цвет текста при наведении */
+}
+
+.submenu {
+    display: none;
+}
+
+/* Стили для элементов с выпадающим меню */
+.has-submenu {
+    position: relative; /* Добавляем позиционирование для родительского элемента "Донат" */
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+    position: absolute;
+    padding: 10px; /* Отступы внутри выпадающего меню */
+    top: 100%; /* Отображать меню под родительским элементом */
+    left: 0; /* Выравнивание меню с левым краем родительского элемента */
+}
+
+/* Стили для ссылок в выпадающем меню при наведении курсора */
+.submenu li:hover {
+    color: white;
+}
+
+.submenu li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.downloadMenu {
+    display: flex;
+    justify-content: space-between; /* Исправляем опечатку в значении justify-content */
+    align-items: center;
+    margin-top: 240px;
+}
+
+.downloadMenu ul {
+    list-style: none;
+}
+
+.downloadMenu ul li {
+    display: list-item;
+    padding: 10px;
+    color: white;
+}
+
+.downloadMenu ul li a {
+    text-decoration: none;
+    font-size: 128px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.downloadMenu ul li a:hover {
+    color: blue; /* Цвет текста при наведении */
+}
